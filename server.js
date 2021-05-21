@@ -2,6 +2,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const PORT = process.env.PORT || 3001;
 
 //for providing .env Secret Token Key to JWT Signing
 require("dotenv").config();
@@ -65,6 +66,10 @@ const editUserData = (req, old_data) => {
 };
 
 //=======================REQUST HANDLING===========================
+
+app.get("/", (req, res) => {
+  res.status(201).send("Server Started");
+});
 
 app.post("/signup", (req, res) => {
   //Here exp is expiration time, 5 is the no. of minutes we want

@@ -1,4 +1,4 @@
-POST http://localhost:3001/signup
+POST https://safe-dawn-63028.herokuapp.com/signup
 Content-Type: application/json
 
 {
@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:3001/login
+POST https://safe-dawn-63028.herokuapp.com/login
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRldnJoIiwiZW1haWwiOiJkZXZyaGF0aGlAZ21haWwuY29tIiwicGFzc3dvcmQiOiIxMjMiLCJhZGRyZXNzIjoidGVtcCIsImlhdCI6MTYyMTUyNTg1NCwiZXhwIjoxNjIxNTI2MTU0fQ.CSQjbUjLQdY6JeLniEDe6Dyi4dX7Y55lstCtv-NtCGU
 Content-Type: application/json
 
